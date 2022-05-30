@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}Bosh sahifa{% endblock title %}
+{% block link %}
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-2 logo">
+                    <a href="#">logo</a>
+                </div>
+                <div class="col-4">
+                    <ul class="nav justify-content-between">
+                        <li class="nav-item" class="signup">
+                            <a href="{% url 'signup' %}">Ro'yxatdan o'tish</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{% url 'login' %}">Kirish</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock link %}

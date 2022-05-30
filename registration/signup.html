@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block title %}Ro`yxatdan o`tish{% endblock title %}
+{% block content %}
+
+    <main>
+    <div class="login" xmlns="http://www.w3.org/1999/html">
+        <h1>Ro`yxatdan o`tish</h1>
+         <form method="post" class="forma">
+             {% csrf_token %}
+             {{ form|crispy }}
+             <button type="submit">Yuborish</button>
+         </form>
+    </div>
+    </main>
+{% endblock content %}
